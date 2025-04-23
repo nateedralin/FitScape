@@ -2,53 +2,55 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>StyleSync</title>
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav class="navbar">
-    <div class="logo">StyleSync</div>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#recommender">Recommender</a></li>
-      <li><a href="#trending">Trending</a></li>
-    </ul>
-  </nav>
-
   <header class="hero">
-    <h1>Style meets Tech.</h1>
-    <p>Your AI-powered outfit companion for every vibe.</p>
-    <a href="#recommender" class="cta">Try it now</a>
+    <nav class="navbar">
+      <div class="logo">StyleSync</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#recommender">Recommender</a></li>
+        <li><a href="#trending">Trending</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <h1>Bodywear Reimagined</h1>
+      <p>Elevate your daily style with curated fits powered by you.</p>
+      <a href="#recommender" class="cta">Try the Recommender</a>
+    </div>
   </header>
 
-  <section id="about">
-    <h2>What is StyleSync?</h2>
-    <p>StyleSync is a fashion-forward digital experience that uses smart logic to suggest outfits based on your mood, weather, and trends — all while keeping sustainability in mind.</p>
+  <section id="about" class="about">
+    <div class="about-text">
+      <h2>Craft Meets Code</h2>
+      <p>StyleSync bridges fashion and tech with tailored recommendations based on mood and weather — a sleek experience curated for the modern wardrobe.</p>
+    </div>
   </section>
 
-  <section id="recommender">
+  <section id="recommender" class="recommender">
     <h2>Find Your Fit</h2>
     <form id="outfitForm">
-      <label for="mood">Your Mood:</label>
-      <input type="text" id="mood" placeholder="e.g., confident, cozy" required />
-      <label for="weather">Weather:</label>
-      <input type="text" id="weather" placeholder="e.g., sunny, rainy" required />
-      <button type="submit">Get Outfit</button>
+      <input type="text" id="mood" placeholder="Mood (e.g., confident, cozy)" required />
+      <input type="text" id="weather" placeholder="Weather (e.g., sunny, rainy)" required />
+      <button type="submit">Get Recommendation</button>
     </form>
-    <div id="recommendationResult"></div>
+    <div id="recommendationResult" class="recommendation-result"></div>
   </section>
 
-  <section id="trending">
-    <h2>Trending Now</h2>
-    <div class="trend-gallery">
-      <div class="card">
-        <img src="assets/placeholder-outfits/outfit1.jpg" alt="Trending Fit" />
+  <section id="trending" class="trending">
+    <h2>Trending</h2>
+    <div class="trend-grid">
+      <div class="trend-card">
+        <img src="assets/placeholder-outfits/outfit1.jpg" alt="Y2K Revival" />
         <p>Y2K Revival</p>
       </div>
-      <div class="card">
-        <img src="assets/placeholder-outfits/outfit2.jpg" alt="Trending Fit" />
-        <p>Techwear</p>
+      <div class="trend-card">
+        <img src="assets/placeholder-outfits/outfit2.jpg" alt="Techwear Edge" />
+        <p>Techwear Edge</p>
       </div>
     </div>
   </section>
