@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StyleSync</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">StyleSync</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#recommender">Recommender</a></li>
+      <li><a href="#trending">Trending</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <h1>Style meets Tech.</h1>
+    <p>Your AI-powered outfit companion for every vibe.</p>
+    <a href="#recommender" class="cta">Try it now</a>
+  </header>
+
+  <section id="about">
+    <h2>What is StyleSync?</h2>
+    <p>StyleSync is a fashion-forward digital experience that uses smart logic to suggest outfits based on your mood, weather, and trends — all while keeping sustainability in mind.</p>
+  </section>
+
+  <section id="recommender">
+    <h2>Find Your Fit</h2>
+    <form id="outfitForm">
+      <label for="mood">Your Mood:</label>
+      <input type="text" id="mood" placeholder="e.g., confident, cozy" required />
+      <label for="weather">Weather:</label>
+      <input type="text" id="weather" placeholder="e.g., sunny, rainy" required />
+      <button type="submit">Get Outfit</button>
+    </form>
+    <div id="recommendationResult"></div>
+  </section>
+
+  <section id="trending">
+    <h2>Trending Now</h2>
+    <div class="trend-gallery">
+      <div class="card">
+        <img src="assets/placeholder-outfits/outfit1.jpg" alt="Trending Fit" />
+        <p>Y2K Revival</p>
+      </div>
+      <div class="card">
+        <img src="assets/placeholder-outfits/outfit2.jpg" alt="Trending Fit" />
+        <p>Techwear</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
