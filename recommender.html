@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Find Your Fit | FitScape</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar scrolled">
+    <div class="logo">fitscape.</div>
+    <ul class="nav-links">
+      <li><a href="index.html">home</a></li>
+      <li><a href="recommender.html">recommender</a></li>
+      <li><a href="trending.html">trending</a></li>
+    </ul>
+  </nav>
+
+  <section class="recommender" style="padding-top: 6rem;">
+    <h2>Find Your Fit</h2>
+    <form id="outfitForm">
+      <input type="text" id="mood" placeholder="Mood (e.g., confident, cozy)" required />
+      <input type="text" id="weather" placeholder="Weather (e.g., sunny, rainy)" required />
+      <button type="submit">Get Recommendation</button>
+    </form>
+    <div id="recommendationResult" class="recommendation-result"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
