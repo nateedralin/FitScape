@@ -6,15 +6,16 @@
   <title>FitScape | Style Inspiration</title>
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   <header class="hero-video">
     <video autoplay muted loop playsinline id="bgVideo">
-      <source src="HDbg.mp4" type="video/mp4" />
+      <source src="assets/your-hero-video.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
     <div class="hero-overlay">
-      <nav class="navbar">
+      <nav class="navbar" id="navbar">
         <div class="logo">fitscape.</div>
         <ul class="nav-links">
           <li><a href="#about">about</a></li>
@@ -22,7 +23,7 @@
           <li><a href="#trending">trending</a></li>
         </ul>
       </nav>
-      <div class="hero-content">
+      <div class="hero-content" data-aos="fade-up">
         <h1>fitscape.</h1>
         <p>style inspiration, powered by you.</p>
         <a href="#recommender" class="cta">try the style recommender!</a>
@@ -30,14 +31,12 @@
     </div>
   </header>
 
-  <section id="about" class="about">
-    <div class="about-text">
-      <h2>Craft Meets Code</h2>
-      <p>FitScape bridges fashion and tech with tailored recommendations based on mood and weather — a sleek experience curated for the modern wardrobe.</p>
-    </div>
+  <section id="about" class="about" data-aos="fade-up">
+    <h2>Craft Meets Code</h2>
+    <p>FitScape bridges fashion and tech with tailored recommendations based on mood and weather — a sleek experience curated for the modern wardrobe.</p>
   </section>
 
-  <section id="recommender" class="recommender">
+  <section id="recommender" class="recommender" data-aos="zoom-in">
     <h2>Find Your Fit</h2>
     <form id="outfitForm">
       <input type="text" id="mood" placeholder="Mood (e.g., confident, cozy)" required />
@@ -47,7 +46,7 @@
     <div id="recommendationResult" class="recommendation-result"></div>
   </section>
 
-  <section id="trending" class="trending">
+  <section id="trending" class="trending" data-aos="fade-up">
     <h2>Trending</h2>
     <div class="trend-grid">
       <div class="trend-card">
@@ -62,5 +61,7 @@
   </section>
 
   <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>
