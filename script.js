@@ -1,4 +1,4 @@
-// sticky navbar
+// Sticky Navbar Scroll Effect
 window.addEventListener("scroll", function () {
   const navbar = document.querySelector(".navbar");
   if (window.scrollY > 50) {
@@ -8,7 +8,7 @@ window.addEventListener("scroll", function () {
   }
 });
 
-// fit recommender
+// Outfit recommender
 document.getElementById("outfitForm").addEventListener("submit", function (e) {
   e.preventDefault();
   const mood = document.getElementById("mood").value.toLowerCase();
