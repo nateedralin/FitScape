@@ -11,27 +11,31 @@ html {
 
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #D7CEB2; /* Pearl as base */
-  color: #66635B; /* Dim gray text */
+  background-color: #E6EBE0;
+  color: #1F1F1F;
   line-height: 1.6;
 }
 
-/* Fonts */
 h1, h2 {
   font-family: 'Playfair Display', serif;
-  color: #4C5760; /* Outer space headings */
+  color: #1F1F1F;
 }
 
-/* Navbar */
+/* Sticky Transparent Navbar */
 .navbar {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   padding: 1rem 2rem;
-  background-color: #4C5760; /* dark slate */
-  position: absolute;
-  width: 100%;
+  background: transparent;
+  position: fixed;
   top: 0;
-  z-index: 100;
+  width: 100%;
+  z-index: 1000;
+  transition: background 0.3s ease;
+}
+.navbar.scrolled {
+  background: rgba(76, 87, 96, 0.9); /* dark slate with transparency */
 }
 .logo {
   font-family: 'Playfair Display', serif;
@@ -50,7 +54,7 @@ h1, h2 {
   font-weight: 500;
 }
 
-/* Hero Video */
+/* Hero */
 .hero-video {
   position: relative;
   height: 100vh;
@@ -80,16 +84,14 @@ h1, h2 {
 }
 .hero-content h1 {
   font-size: 3rem;
-  color: white;
   margin-bottom: 1rem;
 }
 .hero-content p {
   font-size: 1.25rem;
-  color: white;
   margin-bottom: 1.5rem;
 }
 .cta {
-  background-color: #4C5760; /* Outer space */
+  background-color: #4C5760;
   color: white;
   padding: 0.75rem 2rem;
   border: none;
@@ -98,22 +100,22 @@ h1, h2 {
   transition: all 0.3s ease;
 }
 .cta:hover {
-  background-color: #66635B; /* Dim gray */
+  background-color: #66635B;
 }
 
 /* About Section */
 .about {
   padding: 4rem 2rem;
-  max-width: 900px;
+  max-width: 800px;
   margin: 0 auto;
   text-align: center;
-  background-color: #F5F4F0;
 }
 .about h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 .about p {
+  font-size: 1.1rem;
   color: #4C5760;
 }
 
@@ -123,9 +125,10 @@ h1, h2 {
   max-width: 700px;
   margin: 0 auto;
   text-align: center;
-  background-color: #93A8AC;
 }
 .recommender h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
   color: #4C5760;
 }
 .recommender input {
@@ -158,7 +161,6 @@ h1, h2 {
   padding: 4rem 2rem;
   max-width: 1000px;
   margin: 0 auto;
-  background-color: #D7CEB2;
 }
 .trending h2 {
   color: #4C5760;
