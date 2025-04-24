@@ -1,3 +1,14 @@
+// sticky navbar
+window.addEventListener("scroll", function () {
+  const navbar = document.querySelector(".navbar");
+  if (window.scrollY > 50) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
+});
+
+// fit recommender
 document.getElementById("outfitForm").addEventListener("submit", function (e) {
   e.preventDefault();
   const mood = document.getElementById("mood").value.toLowerCase();
